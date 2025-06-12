@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- 添加静态变换发布节点，为my_frame创建变换 -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_my_frame" 
+        args="0 0 0 0 0 0 map my_frame" />
+  
+  <!-- 1. 启动道路参考线发布节点 -->
+  <node name="pnc_map_publisher" pkg="apollo_planning" type="PNC_MapPub" output="screen" />
+  
+  <!-- 2. 启动障碍物发布节点 -->
+  <node name="pnc_obstacle_publisher" pkg="apollo_planning" type="PNC_ObsPub" output="screen" />
+  
+  <!-- 3. 启动格点规划节点 -->
+  <node name="lattice_planner" pkg="apollo_planning" type="lattice_planner" output="screen" />
+  
+  <!-- 启动 RViz 进行可视化，使用自定义配置文件 -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find apollo_planning)/rviz/apollo_planning_with_sl_st.rviz" respawn="true" />
+</launch> 

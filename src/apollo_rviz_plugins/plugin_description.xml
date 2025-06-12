@@ -1,0 +1,16 @@
+<library path="lib/libapollo_rviz_plugins">
+  <class name="apollo_rviz_plugins/SLPanel"
+         type="apollo_rviz_plugins::SLPanel"
+         base_class_type="rviz::Panel">
+    <description>
+      A panel widget for visualizing SL (Station-Lateral) graphs from Apollo trajectory planning.
+    </description>
+  </class>
+  <class name="apollo_rviz_plugins/STPanel"
+         type="apollo_rviz_plugins::STPanel"
+         base_class_type="rviz::Panel">
+    <description>
+      A panel widget for visualizing ST (Station-Time) graphs from Apollo trajectory planning.
+    </description>
+  </class>
+</library> 

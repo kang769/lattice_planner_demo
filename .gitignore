@@ -1,0 +1,29 @@
+# ROS相关忽略文件
+build/
+devel/
+.catkin_tools/
+.catkin_workspace
+logs/
+log/
+
+# 编译生成的文件
+*.o
+*.so
+*.a
+*.pyc
+*.pyo
+__pycache__/
+
+# IDE相关文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*~
+*.bak 
