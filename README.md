@@ -38,9 +38,9 @@ source devel/setup.bash
 roslaunch apollo_trajectory_planning demo.launch
 ```
 
-![ST_graph](/home/jjk/图片/ST_graph.png)
+![ST图](src/apollo_rviz_plugins/pics/ST_graph.png)
 
-![SL_graph](/home/jjk/图片/SL_graph.png)
+![SL图](src/apollo_rviz_plugins/pics/SL_graph.png)
 
 ## 许可证
 
