@@ -35,7 +35,7 @@ catkin_make
 source devel/setup.bash
 
 # 运行演示
-roslaunch apollo_trajectory_planning demo.launch
+roslaunch apollo_planning apollo_trajectory_planning.launch
 ```
 
 ![ST图](src/apollo_rviz_plugins/pics/ST_graph.png)
